@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kinopark</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav-bar">
+                <img src="images/logos.png" alt="logo">
+                <a href="#" class="header-block__btn button">Алматы</a>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#" class="nav-link">Расписание</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Скоро</a>  
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Еда и напитки</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Мой Kinopark</a>
+                    </li>
+                </ul>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#" class="nav-link">Вход / Регистрация</a>
+                    </li>
+					<li>
+                        <a href="#" class="nav-link triangle-down">Руc <img src="images/triangle-down-icon.svg"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+	  <div class="carousel-inner">
+	    <div class="carousel-item active" data-interval="10000">
+	      <img src="images/spider.png" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item" data-interval="2000">
+	      <img src="images/spider.png" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="images/spider.png" class="d-block w-100" alt="...">
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+
+
+    	<section class="today-in-cinema">
+    		 <div class="container">
+    		 	<div class="row main-title">
+    		 		<div class="col-md-6">
+	                    <h3 class="main-heading">
+	                        Сегодня в кино
+	                    </h3>
+	                </div>
+	                <div class="col-md-6">
+	                    <a href="#" class="float-md-right main-link">
+	                        Смотреть полное расписание
+	                        <img src="images/Line.svg" alt="right-line">
+	                    </a>
+	                </div>
+    		 	</div>
+    		 	<div class="row image-group ">
+    		 		<div class=".col-md-1dot7">
+    		 			<div class="image-block-leftline">
+    		 				<img src="images/left.svg">
+    		 			</div>
+    		 		</div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                    	<img src="images/planpobega.png">
+	                    	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating18.png">
+	                    	</div>
+		                        <div class="image-block-description">
+		                            <p class="image-block-description-text">
+		                                План побега 3
+		                            </p>
+		                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                        <img src="images/meninblack.png">
+	               	        <div class="image-block-age-rating">
+	                    		<img src="images/age-rating12.png">
+	                    	</div>
+	                    	<div class="image-block-imax">
+	                    		<img src="images/imax.png">
+	                    	</div>
+	                        <div class="image-block-description">
+	                            <p class="image-block-description-text">
+	                               Люди в черном: Интернэшнл
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-2">
+	                    <div class="image-block" >
+	                        <img src="images/teenspirit.png">
+		                    <div class="image-block-age-rating">
+	                    		<img src="images/age-rating16.png">
+	                    	</div>
+	                        <div class="image-block-description">
+	                            <p class="image-block-description-text">
+	                                За мечтой
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                    	<img src="images/aladdin.png">
+	                    	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating6.png">
+	                    	</div>        
+	                    	<div class="image-block-imax">
+	                    		<img src="images/imax.png">
+	                    	</div>
+	                        <div class="image-block-description">
+	                            <p class="image-block-description-text">
+	                                Аладдин
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                    	<img src="images/rocketman.png">
+	                    	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating18.png">
+	                    	</div>
+	                        <div class="image-block-description">
+	                            <p class="image-block-description-text">
+	                                Рокетмен
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>	
+	                <div class=".col-md-1dot7">
+    		 			<div class="image-block-rightline">
+    		 				<img src="images/right.svg">
+    		 			</div>
+    		 		</div>                
+	            </div>
+    		 </div>
+    	</section>
+
+
+
+    	<section class="hot-price">
+    		 <div class="container">
+    		 	<div class="row main-title">
+    		 		<div class="col-md-6">
+	                    <h3 class="main-heading-hot">
+	                        Hot price
+	                    </h3>
+	                </div>
+	                <div class="col-md-6">
+	                    <a href="#" class="float-md-right main-link">
+	                        Узнать подробнее об акции Hot Price
+	                        <img src="images/Line.svg" alt="right-line">
+	                    </a>
+	                </div>
+    		 	</div>
+    		 	<div class="row image-group ">
+    		 	    <div class=".col-md-1dot7">
+    		 			<div class="image-block-leftline">
+    		 				<img src="images/left.svg">
+    		 			</div>
+    		 		</div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block">
+	                    	<img src="images/planpobega.png">
+	                      	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating18.png">
+	                    	</div>
+	                    	<div class="image-block-hot-price">
+	                    		<img src="images/hot-price.png">
+	                    	</div>
+		                        <div class="image-block-description">
+		                            <p class="image-block-description-text">
+		                                План побега 3
+		                            </p>
+		                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                        <img src="images/meninblack.png">
+	                    	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating12.png">
+	                    	</div>
+	                    	<div class="image-block-imax">
+	                    		<img src="images/imax.png">
+	                    	</div>
+	                    	<div class="image-block-hot-price">
+	                    		<img src="images/hot-price.png">
+	                    	</div>
+	                        <div class="image-block-description">
+	                            <p class="image-block-description-text">
+	                               Люди в черном: Интернэшнл
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                        <img src="images/teenspirit.png">
+	                      	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating16.png">
+	                    	</div>
+	                    	<div class="image-block-hot-price">
+	                    		<img src="images/hot-price.png">
+	                    	</div>
+	                        <div class="image-block-description">
+	                            <p class="image-block-description-text">
+	                                За мечтой
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                    	<img src="images/aladdin.png">
+	                    	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating6.png">
+	                    	</div>
+	                    	<div class="image-block-imax">
+	                    		<img src="images/imax.png">
+	                    	</div>
+	                    	<div class="image-block-hot-price">
+	                    		<img src="images/hot-price.png">
+	                    	</div>
+	                        <div class="image-block-description">
+	                            <p class="image-block-description-text">
+	                                Аладдин
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                    	<img src="images/rocketman.png">
+	                    	<div class="image-block-hot-price">
+	                    		<img src="images/hot-price.png">
+	                    	</div>
+	                    	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating18.png">
+	                    	</div>
+	                        <div class="image-block-description">
+	                            <p class="image-block-description-text">
+	                                Рокетмен
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+    		 			<div class="image-block-rightline">
+    		 				<img src="images/right.svg">
+    		 			</div>
+    		 		</div>	                
+	            </div>
+    		 </div>
+    	</section>
+
+    	<section class="soon">
+    		 <div class="container">
+    		 	<div class="row main-title">
+    		 		<div class="col-md-6">
+	                    <h3 class="main-heading">
+	                        Скоро на экранах
+	                    </h3>
+	                </div>
+	                <div class="col-md-6">
+	                    <a href="#" class="float-md-right main-link">
+	                        Смотреть все предстоящие фильмы
+	                        <img src="images/Line.svg" alt="right-line">
+	                    </a>
+	                </div>
+    		 	</div>
+    		 	<div class="row image-group ">
+    		 		<div class=".col-md-1dot7">
+    		 			<div class="image-block-leftline">
+    		 				<img src="images/left.svg">
+    		 			</div>
+    		 		</div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                    	<img src="images/lionking.png">
+	                      	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating6.png">
+	                    	</div>
+	                    	<div class="image-block-imax">
+	                    		<img src="images/imax.png">
+	                    	</div>
+	                    	<div class="image-block-presale">
+	                    		<p>Предпродажа</p>
+	                    	</div>
+	                    	<div class="image-block-rectangle">
+	                			<p>c 18.07.2019</p>
+	                    	</div>
+		                        <div class="image-block-description">
+		                            <p class="image-block-description-text">
+		                                Король лев
+		                            </p>
+		                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                        <img src="images/art.png">
+	                      	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating16.png">
+	                    	</div>
+	                    	<div class="image-block-presale">
+	                    		<p>Предпродажа</p>
+	                    	</div>
+	                    	<div class="image-block-rectangle">
+	                			<p>c 18.07.2019</p>
+	                    	</div>
+	                        <div class="image-block-description">
+	                            <p class="image-block-description-text">
+	                               Искусство обмана
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                        <img src="images/4x4.png">
+	                    	<div class="image-block-rectangle">
+	                			<p>c 18.07.2019</p>
+	                    	</div>
+	                      	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating16.png">
+	                    	</div>
+	                        <div class="image-block-description">
+	                            <p class="image-block-description-text">
+	                                Мышеловка
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                    	<img src="images/dark.png">
+	                    	<div class="image-block-rectangle">
+	                			<p>c 18.07.2019</p>
+	                    	</div>
+	                      	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating18.png">
+	                    	</div>
+	                        <div class="image-block-description">
+	                            <p class="image-block-description-text">
+	                                Обитель тьмы
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                    	<img src="images/sunstay.png">
+	                    	<div class="image-block-rectangle">
+	                			<p>c 18.07.2019</p>
+	                    	</div>
+	                      	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating18.png">
+	                    	</div>
+	                        <div class="image-block-description">
+	                            <p class="image-block-description-text">
+	                                Солнцестояние
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>	
+	                <div class=".col-md-1dot7">
+    		 			<div class="image-block-rightline">
+    		 				<img src="images/right.svg">
+    		 			</div>
+    		 		</div>                
+	            </div>
+    		 </div>
+    	</section>
+
+    	<section class="theatre">
+    		 <div class="container">
+    		 	<div class="row main-title">
+    		 		<div class="col-md-6">
+	                    <h3 class="main-heading">
+	                        Театр HD
+	                    </h3>
+	                </div>
+	                <div class="col-md-6">
+	                    <a href="#" class="float-md-right main-link">
+	                        Смотреть все постановки
+	                        <img src="images/Line.svg" alt="right-line">
+	                    </a>
+	                </div>
+    		 	</div>
+    		 	<div class="row image-group ">
+    		 		<div class=".col-md-1dot7">
+
+    		 		</div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                    	<img src="images/theatre1.png">
+	                      	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating18.png">
+	                    	</div>
+		                        <div class="image-block-description">
+		                            <p class="image-block-description-text">
+		                                Лебединое озеро
+		                            </p>
+		                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                        <img src="images/theatre2.png">
+	                      	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating16.png">
+	                    	</div>
+	                        <div class="image-block-description">
+	                            <p class="image-block-description-text">
+	                               Жизель
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                        <img src="images/theatre3.png">
+	                      	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating16.png">
+	                    	</div>
+	                        <div class="image-block-description">
+	                            <p class="image-block-description-text">
+	                                Севильский церюльник
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                    	<img src="images/theatre4.png">
+	                      	<div class="image-block-age-rating">
+	                    		<img src="images/age-rating16.png">
+	                    	</div>
+	                        <div class="image-block-description">
+	                            <p class="image-block-description-text">
+	                                Богема
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class=".col-md-1dot7">
+	                    <div class="image-block" >
+	                    	<img src="images/theatre5.png">
+	                 	<div class="market-up">
+	                    	<p>Реклама</p>
+	                    </div>
+	                    <div class="market-down">
+	  						<p>Проголодался?<br> Закажи на arimaze.kz</p>                  	
+	                    </div>
+	                    </div>
+	                </div>	 
+	  		 		<div class=".col-md-1dot7">
+    		 			
+    		 		</div>               
+	            </div>
+    		 </div>
+    	</section>
+
+		<section class="news">
+	        <div class="container">
+	            <div class="row main-title-news">
+	                <div class="col-md-6">
+	                    <h3 class="main-heading">
+	                        Новости Kinopark
+	                    </h3>
+	                </div>
+	                <div class="col-md-6">
+	                    <a href="#" class="float-md-right main-link">
+	                        Читать все новости
+	                        <img src="images/Line.svg" alt="right-line">
+	                    </a>
+	                </div>
+	            </div>
+	            <div class="row image-group justify-content-space-between">
+	                <div class="col-md-4">
+	                    <div class="image-block-news" style="background: url(images/firstNewsImg.png); margin-left: 0;">
+	                        <div class="image-block-description-news">
+	                            <p class="image-block-description-date">
+	                                9 августа, 2019 г.
+	                            </p>
+	                            <h4 class="image-block-description-heading">
+	                                «Кино Ночь» в стиле MIAMI в Kinopark 5 Atakent
+	                            </h4>
+	                            <p class="image-block-description-text">
+	                                17 августа приходите одетыми в стиле MIAMI и получите бесплатный комбо на...
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-4">
+	                    <div class="image-block-news" style="background: url(images/secondNewsImg.png);">
+	                        <div class="image-block-description-news">
+	                            <p class="image-block-description-date">
+	                                9 августа, 2019 г.
+	                            </p>
+	                            <h4 class="image-block-description-heading">
+	                                «Кино Ночь» в стиле MIAMI в Kinopark 5 Atakent
+	                            </h4>
+	                            <p class="image-block-description-text">
+	                                17 августа приходите одетыми в стиле MIAMI и получите бесплатный комбо на...
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-4">
+	                    <div class="image-block-news" style="background: url(images/thirdNewsImg.png); margin-right: 0;">
+	                        <div class="image-block-description-news">
+	                            <p class="image-block-description-date">
+	                                9 августа, 2019 г.
+	                            </p>
+	                            <h4 class="image-block-description-heading">
+	                                «Кино Ночь» в стиле MIAMI в Kinopark 5 Atakent
+	                            </h4>
+	                            <p class="image-block-description-text">
+	                                17 августа приходите одетыми в стиле MIAMI и получите бесплатный комбо на...
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+
+	    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="footer-card">
+                        <div class="footer-images">
+                            <img src="images/footerlogos.png" alt="kinopark-logo">
+                        </div>
+                        <p class="footer-text-title">Скачайте приложение Kinopark</p>
+                        <div class="footer-apps">
+                            <div class="footer-apps-item">
+                                <img src="images/appstore.png" alt="apple-logo">
+                            </div>
+                            <div class="footer-apps-item">
+                                <img src="images/googleplay.png" alt="android-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="footer-nav">
+                        <h4 class="footer-text-title">Афиша</h4>
+                        <ul>
+                            <li>
+                                <a href="#" class="footer-main-text">Сегодня в кино</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-main-text">Скоро на экранах</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-main-text">Экслюзивный контент</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav">
+                        <h4 class="footer-text-title">Технологии</h4>
+                        <ul class="footer-row">
+                            <li>
+                                <a href="#" class="footer-main-text">IMAX</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-main-text">Dolby Atmos</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-main-text">Laser</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="footer-nav">
+                        <h4 class="footer-text-title">О компании</h4>
+                        <ul>
+                            <li>
+                                <a href="#" class="footer-main-text">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-main-text">Кинотеатры</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-main-text">Для бизнеса</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-main-text">Партнеры</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-main-text">Новости</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-main-text">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="footer-contact">
+                        <div class="footer-icons">
+                        	<a href=""><img src="images/facebook-square.svg"></a>
+                        	<a href=""><img src="images/instagram.svg"></a>
+                        	<a href=""><img src="images/vk.svg"></a>                        	
+                        </div>
+                        <p class="footer-main-text">
+                            +7 (702) 000 6068
+                        </p>
+                        <p class="footer-main-text">
+                            info@kinopark.kz
+                        </p>
+                    </div>
+                    <div class="footer-nav">
+                        <h4 class="footer-text-title">Дополнительно</h4>
+                        <ul>
+                            <li>
+                                <a href="#" class="footer-main-text">Часто задаваемые вопросы</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-main-text">Покупка/возврат билетов</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>    
+  </body>
+</html>
