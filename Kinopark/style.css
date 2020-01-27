@@ -134,6 +134,7 @@ a {
 	text-align: center;
 	color: #FFFFFF;
 }
+
 .image-block{
   	justify-content: center;
   	max-width: 164px !important;
@@ -299,6 +300,16 @@ a {
     background-size: cover;
     position: relative;
     margin: 0 auto;
+}
+.image-block-description-text-news{
+    padding-top: 8px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    color: #4E4E4E;
 }
 
 .image-block-description-news {

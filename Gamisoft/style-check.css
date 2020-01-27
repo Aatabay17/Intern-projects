@@ -1,0 +1,99 @@
+/*GENERAL PART*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+	background: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+}
+.container-check{
+	max-width: 358px;
+	margin: 198.24px auto 0;
+	height: 332px;
+	display: flex;
+	justify-content: center;
+}
+.check-mail{
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	display: inline-block;
+}
+.check-mail h1{
+	padding-top: 24px;
+}
+.check-mail p{
+	margin-top: 8px;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+
+	/* Gray / Additional 2 */
+
+	color: #B0BAC9;	
+}
+.submit{
+	display: inline-block;
+	width: 358px;
+	height: 52px;
+	margin-top: 30px;
+	background: #FF9800;
+	border-radius: 6px;
+	border: none;
+	font-size: 114%;
+	line-height: 19px;
+	/* identical to box height */
+
+	text-align: center;
+	letter-spacing: 0.04em;
+
+	/* White */
+
+	color: #FFFFFF;
+}
+
+.check-mail a{
+	display: inline-block;
+	margin-top: 16px;
+
+	line-height: 16px;
+	/* identical to box height, or 114% */
+
+	text-align: center;
+	letter-spacing: 0.5px;
+	text-decoration-line: underline;
+
+	/* Black */
+
+	color: #282F4A;
+}
+
+/*FOOTER*/
+footer{
+	border: 2px solid #F4F5F9;
+	padding-top: 62px;
+	margin-top: 287px; 
+	padding-bottom: 63px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+footer a{
+	font-size: 114%;
+	line-height: 19px;
+	/* identical to box height */
+	text-decoration-line: none;
+	text-align: center;
+	/* White */	
+	color: #25283C;
+	margin-right: 48px;
+}
