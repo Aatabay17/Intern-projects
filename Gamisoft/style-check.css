@@ -27,10 +27,10 @@ html{
 	height: 100%;
 	display: inline-block;
 }
-.check-mail h1{
+.check-mail .check-heading{
 	padding-top: 24px;
 }
-.check-mail p{
+.check-mail .check-paragraph{
 	margin-top: 8px;
 	font-size: 16px;
 	line-height: 19px;
@@ -60,7 +60,7 @@ html{
 	color: #FFFFFF;
 }
 
-.check-mail a{
+.check-mail .send-again-check{
 	display: inline-block;
 	margin-top: 16px;
 
@@ -77,7 +77,7 @@ html{
 }
 
 /*FOOTER*/
-footer{
+.footer{
 	border: 2px solid #F4F5F9;
 	padding-top: 62px;
 	margin-top: 287px; 
@@ -87,7 +87,7 @@ footer{
   	justify-content: center;
 }
 
-footer a{
+.footer .footer-link{
 	font-size: 114%;
 	line-height: 19px;
 	/* identical to box height */
