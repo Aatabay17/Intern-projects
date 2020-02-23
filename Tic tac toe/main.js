@@ -11,6 +11,8 @@ let secondPlayerArray;
 let firstPlayerGlobalScore = 0;
 let secondPlayerGlobalScore = 0;
 
+let arrayForDraw;
+
 init();
 
 function init(){
@@ -19,6 +21,7 @@ function init(){
     active = '';
     firstPlayerArray = [];
     secondPlayerArray = [];
+    arrayForDraw = [];
     document.getElementById('btn-1').textContent = '';
     document.getElementById('btn-2').textContent = '';
     document.getElementById('btn-3').textContent = '';
@@ -32,6 +35,7 @@ function init(){
     document.querySelector('#name-1').textContent = 'Player 2';
     document.querySelector('.player-0').classList.remove('winner');
     document.querySelector('.player-1').classList.remove('winner');
+    document.querySelector('#draw-id').textContent = '';
     console.log('INITED');
 }
 
@@ -44,11 +48,13 @@ function pressBtn(event){
             player = 1;
             firstPlayerArray.push(event.target.attributes.position.value);
             event.target.textContent = active;
+            arrayForDraw.push(event.target.attributes.id.value);
         }else if(player === 1 && event.target.textContent === '' ){
             active='O';
             player=0;
             secondPlayerArray.push(event.target.attributes.position.value);
             event.target.textContent = active;
+            arrayForDraw.push(event.target.attributes.id.value);
         }
         let element = event.target.attributes.position.value;
         // event.target.textContent = active;
@@ -137,6 +143,15 @@ function winner(){
             //will be restarted if we click any button
             gamePlaying = false;
 
+        }
+        else if(arrayForDraw.length > 8){
+            document.querySelector('#draw-id').textContent = 'Draw!';
+            // document.querySelector('#draw-id').classList.add('draw');
+            //will be imediatelly restarted
+            //init(); 
+
+            //will be restarted if we click any button
+            gamePlaying = false;
         }
 
     }
