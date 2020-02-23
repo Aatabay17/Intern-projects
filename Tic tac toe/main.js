@@ -38,18 +38,20 @@ function init(){
 function pressBtn(event){
     //  player === 0 ? active = 'X' : active = 'O';
     //  player = 1 - player;
-    if(gamePlaying===true){
-        if(player===0){
+    if(gamePlaying === true){
+        if(player === 0 && event.target.textContent===''){
             active='X';
             player = 1;
             firstPlayerArray.push(event.target.attributes.position.value);
-        }else{
+            event.target.textContent = active;
+        }else if(player === 1 && event.target.textContent === '' ){
             active='O';
             player=0;
             secondPlayerArray.push(event.target.attributes.position.value);
+            event.target.textContent = active;
         }
         let element = event.target.attributes.position.value;
-        event.target.textContent = active;
+        // event.target.textContent = active;
             
         winner();
     }
