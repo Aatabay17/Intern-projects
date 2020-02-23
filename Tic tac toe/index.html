@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic tac toe</title>
+</head>
+<body>
+    <div class="player-score-container">
+        <div class="player-0">
+            <h1 class="player-0-header" id="name-0">Player 1</h1>
+            <h3 class="global-score-0">0</h3>
+        </div>
+        <div class="player-1">
+            <h1 class="player-1-header" id="name-1">Player 2</h1>
+            <h3 class="global-score-1">0</h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="header"><span style="color: royalblue;">Tic</span> <span style="color: royalblue;">tac</span> <span style=" color:rgb(218, 20, 20);">toe</span></h1>
+        <div class="container-btn">
+            <button class="btn" onclick="pressBtn(event)" position="0 0" id="btn-1"></button>
+            <button class="btn" onclick="pressBtn(event)" position="0 1" id="btn-2"></button>
+            <button class="btn" onclick="pressBtn(event)" position="0 2" id="btn-3"></button>
+            <button class="btn" onclick="pressBtn(event)" position="1 0" id="btn-4"></button>
+            <button class="btn" onclick="pressBtn(event)" position="1 1" id="btn-5"></button>
+            <button class="btn" onclick="pressBtn(event)" position="1 2" id="btn-6"></button>
+            <button class="btn" onclick="pressBtn(event)" position="2 0" id="btn-7"></button>
+            <button class="btn" onclick="pressBtn(event)" position="2 1" id="btn-8"></button>
+            <button class="btn" onclick="pressBtn(event)" position="2 2" id="btn-9"></button>
+        </div>
+    </div>
+
+    <button class="btn-restart" onclick="pressRestart(event)">Restart</button>
+    <script src="main.js"></script>
+</body>
+</html>

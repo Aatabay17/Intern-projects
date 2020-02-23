@@ -27,10 +27,10 @@ html{
 	height: 100%;
 	display: inline-block;
 }
-.check-mail .check-heading{
+.check-heading{
 	padding-top: 24px;
 }
-.check-mail .check-paragraph{
+.check-paragraph{
 	margin-top: 8px;
 	font-size: 16px;
 	line-height: 19px;
@@ -60,7 +60,7 @@ html{
 	color: #FFFFFF;
 }
 
-.check-mail .send-again-check{
+.send-again-check{
 	display: inline-block;
 	margin-top: 16px;
 
@@ -87,7 +87,7 @@ html{
   	justify-content: center;
 }
 
-.footer .footer-link{
+.footer-link{
 	font-size: 114%;
 	line-height: 19px;
 	/* identical to box height */
